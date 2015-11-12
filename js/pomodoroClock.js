@@ -123,6 +123,7 @@ $(document).ready(function() {
         time = Number($('.setSession').val()) * 60
         breakCountDown();
       }
+	  console.log(time);
   }
 
   function breakCountDown() {
@@ -150,6 +151,7 @@ $(document).ready(function() {
       breakTime = Number($('.setBreak').val()) * 60;
       countDown();
     }
+	console.log(breakTime);
   }
 
   function loop() {
@@ -159,10 +161,18 @@ $(document).ready(function() {
 
   function stop() {
     if(session.innerHTML === "Break") {
+		if(breakPause === false) {
+			breakTime++;
+		}
       breakPause = true;
+	  console.log(breakTime);
       clearTimeout(b);
     } else if(session.innerHTML === "Session") {
+		if(timerOn === true) {
+			time++;
+		}
       timerOn = false;
+	  console.log(time);
       clearTimeout(t);
     }
 
