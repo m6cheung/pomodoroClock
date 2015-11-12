@@ -1,0 +1,75 @@
+body {
+  background: url("http://img.gawkerassets.com/img/17zly6tfnps0ejpg/ku-xlarge.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.header {
+  text-align: center;
+}
+
+.clockWrap {
+  text-align: center;
+  margin-top: 0px;
+}
+
+#clockBody {
+  border: 3px solid black;
+  border-radius: 250px;
+  margin: 50px auto auto auto;
+  text-align: center;
+  width: 400px;
+  height: 400px;
+  background: white;
+}
+
+#time {
+  margin-top: 60px;
+  font-size: 10rem;
+  color: black;
+}
+
+#timeSession {
+  margin: 40px auto auto auto;
+  font-size: 6rem;
+  color: black;
+}
+
+.btn {
+  font-weight: bold;
+  border: 2px solid black;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px 0.5px black;
+  
+}
+
+.breakTimeSet {
+  margin: 0 20px 0 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.breakMinus, .breakPlus, .sessionMinus, .sessionPlus {
+  width: 70px;
+}
+
+.sessionTimeSet {
+  margin: 25px 0 0 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.setBreak, .setSession {
+  color: white;
+  font-weight: bold;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+.setter {
+  margin-left: 10px;
+}
+
+.setter, .setterB {
+  color: white;
+  font-weight: bold;
+}
