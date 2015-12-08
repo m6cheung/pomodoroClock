@@ -134,7 +134,7 @@ $(document).ready(function() {
     $timer.html(minB + ":" + secB);
      if(minB < 10 && secB >= 10) {
       $timer.html("0" + minB + ":" + secB);
-      secB--
+      secB--;
     } else if(minB < 10 && secB < 10) {
       $timer.html("0" + minB + ":0" + secB);
       secB--;
@@ -206,6 +206,6 @@ $(document).ready(function() {
 
     setTimeout(function() {
       $($audio).remove()
-    }, 1000)
+    }, 1000);
   }
 });
