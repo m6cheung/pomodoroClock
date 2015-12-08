@@ -146,7 +146,7 @@ $(document).ready(function() {
     }
     b = setTimeout(breakCountDown, 1000);
     if(breakTime === -2) {
-      playAlarm()
+      playAlarm();
       loop();
       breakTime = Number($('.setBreak').val()) * 60;
       countDown();
@@ -190,7 +190,7 @@ $(document).ready(function() {
     }
     session.innerHTML = "Session";
     breakTime = Number($('.setBreak').val()) * 60;
-    time = Number($('.setSession').val()) * 60
+    time = Number($('.setSession').val()) * 60;
   }
 
   function playAlarm() {
@@ -205,7 +205,7 @@ $(document).ready(function() {
     $("body").append($audio);
 
     setTimeout(function() {
-      $($audio).remove()
+      $audio.remove();
     }, 1000);
   }
 });
